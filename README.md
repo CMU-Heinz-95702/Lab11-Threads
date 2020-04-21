@@ -246,7 +246,7 @@ Study the code above, run it on IntelliJ, and write down answers to the followin
 
 10. Currently, we are adding n elements to the queue and removing n elements from the queue. Explain what happens if we only add n-1 elements to the queue rather than n. The removal thread is left unchanged.
 
-11. This is the same as question 2 but after adding 1,2,3,...,n-1 to the queue, we would like to put the thread to sleep for 5 seconds and then add n to the queue. The queue ends up taking on 1,2,3,...,n but it does so in two parts. First, it adds 1,2,3,...,n-1 to the queue, and then it sleeps. When it awakes, it adds one value, n, to the queue. Use this code
+11. This is the same as question 10 but after adding 1,2,3,...,n-1 to the queue, we would like to put the thread to sleep for 5 seconds and then add n to the queue. The queue ends up taking on 1,2,3,...,n but it does so in two parts. First, it adds 1,2,3,...,n-1 to the queue, and then it sleeps. When it awakes, it adds one value, n, to the queue. Use this code
 ```
  try{ java.lang.Thread.sleep(5000); } catch(Exception e) {}
 ```
