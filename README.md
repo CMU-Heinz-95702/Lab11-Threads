@@ -3,8 +3,6 @@
 
 The motivation for this lab comes from the Coulouris text on distributed systems. To understand transactions and transaction processing, it is essential to be exposed to threads, communicating threads, deadlock, and isolation. The first part of this lab, Part 1, illustrates deadlock. The second part, Part 2, explores the important issue of isolation. The third part, Part 3, introduces the student to communicating threads via wait and notify.
 
-You will submit a single ".pdf" file to your TA that includes your answers to the questions from each part.
-
 # Part 1 DeadLock
 
 Study the following code, copy it into IntelliJ, and get it running.
