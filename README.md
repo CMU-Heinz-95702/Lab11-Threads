@@ -78,8 +78,6 @@ Study the code above, run it on IntelliJ, and write down answers to the followin
 
 4. Remove all of the synchronization from the code. Remove the "synchronized (resourceX)" coding. What do you see when you run the program?
 
-:checkered_flag:**This is the checkpoint for this lab.**
-
 
 # Part 2 Isolation
 
@@ -251,5 +249,3 @@ Study the code above, run it on IntelliJ, and write down answers to the followin
  try{ java.lang.Thread.sleep(5000); } catch(Exception e) {}
 ```
 to put the thread to sleep. Explain what happens.
-
-:checkered_flag:**Provide to your TA a single PDF file with your answers to the questions one through eleven. Name the pdf file \<yourandrewid\>Lab12.pdf**
