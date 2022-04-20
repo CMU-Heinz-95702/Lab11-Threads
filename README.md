@@ -1,7 +1,9 @@
 # 95-702 Distributed Systems for ISM                         
-# Lab12-Threads
+# Lab12: Threads
 
 The motivation for this lab comes from the Coulouris text on distributed systems. To understand transactions and transaction processing, it is essential to be exposed to threads, communicating threads, deadlock, and isolation. The first part of this lab, Part 1, illustrates deadlock. The second part, Part 2, explores the important issue of isolation. The third part, Part 3, introduces the student to communicating threads via wait and notify.
+
+There are questions about each part (see below). Write up your answers in a ".pdf" file to show to your TA.
 
 # Part 1 DeadLock
 
@@ -75,6 +77,8 @@ Study the code above, run it on IntelliJ, and write down answers to the followin
 3. How does this system behave if t1 and t2 access their shared resources in the exact same order? Make the necessary changes to the code and test it. Explain why you see what you see. Does the system still reach deadlock? Why or why not?
 
 4. Remove all of the synchronization from the code. Remove the "synchronized (resourceX)" coding. What do you see when you run the program?
+
+## :checkered_flag: **This is the checkpoint for this lab. Show the running program and your answers to the questions to the TA.**
 
 
 # Part 2 Isolation
@@ -247,3 +251,5 @@ Study the code above, run it on IntelliJ, and write down answers to the followin
  try{ java.lang.Thread.sleep(5000); } catch(Exception e) {}
 ```
 to put the thread to sleep. Explain what happens.
+
+## :checkered_flag: **Provide to your TA a single PDF file with your answers to the questions one through eleven. Name the pdf file \<yourandrewid\>Lab12.pdf**
