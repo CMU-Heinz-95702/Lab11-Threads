@@ -1,11 +1,11 @@
 # 95-702 Distributed Systems for ISM                         
-# Lab12: Threads
+# **Lab11: Threads**
 
 The motivation for this lab comes from the Coulouris text on distributed systems. To understand transactions and transaction processing, it is essential to be exposed to threads, communicating threads, deadlock, and isolation. The first part of this lab, Part 1, illustrates deadlock. The second part, Part 2, explores the important issue of isolation. The third part, Part 3, introduces the student to communicating threads via wait and notify.
 
 There are questions about each part (see below). Write up your answers in a ".pdf" file to show to your TA.
 
-# Part 1 DeadLock
+# **Part 1 DeadLock**
 
 Study the following code, copy it into IntelliJ, and get it running.
 
@@ -18,7 +18,7 @@ public class DeadLockLabPart1 {
     final Object resource1 = new Object();
     final Object resource2 = new Object();
 
-    final int n = 1000;
+    final int n = 100;
 
     Thread t1 = new Thread( new Runnable() {
         public void run() {
@@ -66,7 +66,7 @@ public class DeadLockLabPart1 {
 
 ```
 
-# Part 1 Questions
+# **Part 1 Questions**
 
 Study the code above, run it on IntelliJ, and write down answers to the following questions.
 
@@ -81,7 +81,7 @@ Study the code above, run it on IntelliJ, and write down answers to the followin
 ## :checkered_flag: **This is the checkpoint for this lab. Show the running program and your answers to the questions to the TA.**
 
 
-# Part 2 Isolation
+# **Part 2 Isolation**
 
 Study the following code, copy it into IntelliJ, and get it running.
 
@@ -107,7 +107,7 @@ class Account {
 
 public class SynchronizedLabPart2 {
 
-    int n = 1000;
+    int n = 100;
 
     Account acct = new Account();
 
@@ -151,7 +151,7 @@ public class SynchronizedLabPart2 {
 ```
 
 
-# Part 2 Questions   
+# **Part 2 Questions**
 
 Study the code above, run it on IntelliJ, and write down answers to the following questions.
 
@@ -165,7 +165,7 @@ Study the code above, run it on IntelliJ, and write down answers to the followin
 
 
 
-# Part 3 Communicating threads
+# **Part 3 Communicating threads**
 
 Study the following code, copy it into IntelliJ, and get it running.
 
@@ -238,7 +238,7 @@ public class WaitAndNotify {
 
 ```
 
-# Part 3 Questions
+# **Part 3 Questions**
 
 Study the code above, run it on IntelliJ, and write down answers to the following questions.
 
@@ -252,4 +252,4 @@ Study the code above, run it on IntelliJ, and write down answers to the followin
 ```
 to put the thread to sleep. Explain what happens.
 
-## :checkered_flag: **Provide to your TA a single PDF file with your answers to the questions one through eleven. Name the pdf file \<yourandrewid\>Lab12.pdf**
+## :checkered_flag: **Provide to your TA a single PDF file with your answers to the questions one through eleven. Name the pdf file \<yourandrewid\>Lab11.pdf**
