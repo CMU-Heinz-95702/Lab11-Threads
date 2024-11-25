@@ -78,7 +78,6 @@ Study the code above, run it on IntelliJ, and write down answers to the followin
 
 4. Remove all of the synchronization from the code. Remove the "synchronized (resourceX)" coding. What do you see when you run the program?
 
-## :checkered_flag: **This is the checkpoint for this lab. Show the running program and your answers to the questions to the TA.**
 
 
 # **Part 2 Isolation**
