@@ -1,9 +1,11 @@
 # 95-702 Distributed Systems for ISM                         
 # **Lab11: Threads**
 
-The motivation for this lab comes from the Coulouris text on distributed systems. To understand transactions and transaction processing, it is essential to be exposed to threads, communicating threads, deadlock, and isolation. The first part of this lab, Part 1, illustrates deadlock. The second part, Part 2, explores the important issue of isolation. The third part, Part 3, introduces the student to communicating threads via wait and notify.
+Complete Lab11_Quiz on Canvas as you work on this lab. See the checkered flags for references to the quiz questions.
 
-There are questions about each part (see below). Write up your answers in a ".pdf" file to show to your TA.
+The motivation for this lab comes from the Coulouris text on distributed systems. To understand transactions and transaction processing, it is essential to be exposed to threads, communicating threads, deadlock, and isolation. The first part of this lab, Part 1, illustrates **deadlock** - when two or more threads cannot continue running because they each have a resource the other wants, and neither will give up the resource they have. The second part, Part 2, explores the important issue of **isolation** - keeping data locked when more than one thread shares that data. The third part, Part 3, introduces the student to communicating threads via **wait** and **notify** - Java instructions that force a thread to sleep or wakeup based on some boolean condition.
+
+There are questions about each part (see below) in addition to the quiz. You should try to answer all those questions, but only the lab quiz is graded.
 
 # **Part 1 DeadLock**
 
@@ -74,11 +76,14 @@ Study the code above, run it on IntelliJ, and write down answers to the followin
 
 2. What is the smallest value of n (choosing n as a power of 10) that you can use to reliably reach deadlock? Your answer only needs to be approximate.
 
+### :checkered_flag: Answer question 1 on the Canvas quiz named Lab11_Quiz.
+
+
 3. How does this system behave if t1 and t2 access their shared resources in the exact same order? Make the necessary changes to the code and test it. Explain why you see what you see. Does the system still reach deadlock? Why or why not?
 
+### :checkered_flag: Answer question 2 on the Canvas quiz named Lab11_Quiz.
+
 4. Remove all of the synchronization from the code. Remove the "synchronized (resourceX)" coding. What do you see when you run the program?
-
-
 
 # **Part 2 Isolation**
 
@@ -158,16 +163,18 @@ Study the code above, run it on IntelliJ, and write down answers to the followin
 
 6. Swap the lines "t1.start();" with "t2.start()". Does the program work with n = 10, 100, 1000, 10000, 100000, 100000000 ? Explain what you find.
 
+### :checkered_flag: Answer question 3 on the Canvas quiz named Lab11_Quiz.
+
+
 7. Remove the synchronized keywords from the Account class methods. Does the program work with  n = 10 ? Describe what happens.
 
 8. With the synchronized keywords removed from the Account class methods. Does the program work with  n = 100, 1000, 10000, 100000, 1000000 ? Describe what happens.
 
-
+### :checkered_flag: Answer question 4 on the Canvas quiz named Lab11_Quiz.
 
 # **Part 3 Communicating threads**
 
 Study the following code, copy it into IntelliJ, and get it running.
-
 
 ```
 
@@ -245,10 +252,11 @@ Study the code above, run it on IntelliJ, and write down answers to the followin
 
 10. Currently, we are adding n elements to the queue and removing n elements from the queue. Explain what happens if we only add n-1 elements to the queue rather than n. The removal thread is left unchanged.
 
+### :checkered_flag: Answer question 5 on the Canvas quiz named Lab11_Quiz.
+
+
 11. This is the same as question 10 but after adding 1,2,3,...,n-1 to the queue, we would like to put the thread to sleep for 5 seconds and then add n to the queue. The queue ends up taking on 1,2,3,...,n but it does so in two parts. First, it adds 1,2,3,...,n-1 to the queue, and then it sleeps. When it awakes, it adds one value, n, to the queue. Use this code
 ```
  try{ java.lang.Thread.sleep(5000); } catch(Exception e) {}
 ```
 to put the thread to sleep. Explain what happens.
-
-## :checkered_flag: **Provide to your TA a single PDF file with your answers to the questions one through eleven. Name the pdf file \<yourandrewid\>Lab11.pdf**
