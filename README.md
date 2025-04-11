@@ -1,7 +1,7 @@
 # 95-702 Distributed Systems for ISM                         
 # **Lab11: Threads**
 
-Complete Lab11_Quiz on Canvas as you work on this lab. See the checkered flags for references to the quiz questions.
+Complete Lab11_Quiz on Canvas as you work on this lab. See the checkered flags for references to the quiz questions. In addition, each section has several questions that you should answer for yourself - these are not collected and graded, but they will serve as the basis for exam questions.
 
 The motivation for this lab comes from the Coulouris text on distributed systems. To understand transactions and transaction processing, it is essential to be exposed to threads, communicating threads, deadlock, and isolation. The first part of this lab, Part 1, illustrates **deadlock** - when two or more threads cannot continue running because they each have a resource the other wants, and neither will give up the resource they have. The second part, Part 2, explores the important issue of **isolation** - keeping data locked when more than one thread shares that data. The third part, Part 3, introduces the student to communicating threads via **wait** and **notify** - Java instructions that force a thread to sleep or wakeup based on some boolean condition.
 
@@ -70,7 +70,7 @@ public class DeadLockLabPart1 {
 
 # **Part 1 Questions**
 
-Study the code above, run it on IntelliJ, and write down answers to the following questions.
+Study the code above, run it on IntelliJ, and answer the following questions (no submission required).
 
 1. What is the largest value of n (choosing n as a power of 10) that you can use that mostly stays out of deadlock? Your answer only needs to be approximate.
 
@@ -157,7 +157,7 @@ public class SynchronizedLabPart2 {
 
 # **Part 2 Questions**
 
-Study the code above, run it on IntelliJ, and write down answers to the following questions.
+Study the code above, run it on IntelliJ, and answer the following questions (no submission required).
 
 5. Experimenting only with the value n, does the program work with n = 10, 100, 1000, 10000, 100000, 100000000 ?
 
@@ -246,7 +246,7 @@ public class WaitAndNotify {
 
 # **Part 3 Questions**
 
-Study the code above, run it on IntelliJ, and write down answers to the following questions.
+Study the code above, run it on IntelliJ, and answer the following questions (no submission required).
 
 9. Currently, we are adding n elements to the queue and removing n elements from the queue. Explain what happens if we add 2n (1,2,3,...,n,n+1,...,2n) elements to the queue rather than n.The removal thread is left unchanged.
 
