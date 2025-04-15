@@ -9,7 +9,7 @@ There are questions about each part (see below) in addition to the quiz. You sho
 
 # **Part 1 DeadLock**
 
-Study the following code, copy it into IntelliJ, and get it running.
+Create a regular Java project in IntelliJ called Lab 11 (not a servlet, message bean, or Maven project). Study the following code, copy it into your IntelliJ project, and get it running.
 
 ```
 
@@ -87,7 +87,7 @@ Study the code above, run it on IntelliJ, and answer the following questions (no
 
 # **Part 2 Isolation**
 
-Study the following code, copy it into IntelliJ, and get it running.
+Study the following code, copy it into your IntelliJ project, and get it running.
 
 ```
 
@@ -174,7 +174,7 @@ Study the code above, run it on IntelliJ, and answer the following questions (no
 
 # **Part 3 Communicating threads**
 
-Study the following code, copy it into IntelliJ, and get it running.
+Study the following code, copy it into your IntelliJ project, and get it running.
 
 ```
 
